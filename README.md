@@ -1,3 +1,5 @@
+### ✅ `README.md`
+
 ```markdown
 # 🛠️ Repositório de Configurações NGINX
 
@@ -17,18 +19,18 @@ Este repositório contém configurações organizadas, seguras e escaláveis do 
 
 ```
 nginx-configs/
-├── sites-available/     → Configurações completas dos sites (virtual hosts)
-├── sites-enabled/       → Sites ativos (habilitados no NGINX)
-├── conf.d/              → Configurações extras (gzip, segurança, timeouts)
-├── snippets/            → Blocos reutilizáveis (SSL, proxy, cache)
-├── nginx.conf           → Configuração principal
-├── nginx.conf.prod      → Modelo para produção
-├── nginx.conf.dev       → Modelo para desenvolvimento
-├── docker/              → Dockerfile e docker-compose.yml
-├── scripts/             → Scripts úteis (test, reload)
-├── README.md            → Este arquivo
-├── LICENSE              → Licença de uso
-└── .gitignore           → Arquivos ignorados pelo Git
+├── sites-available/     # Configurações completas dos sites (virtual hosts)
+├── sites-enabled/       # Sites ativos (habilitados no NGINX)
+├── conf.d/              # Configurações extras (gzip, segurança, timeouts)
+├── snippets/            # Blocos reutilizáveis (SSL, proxy, cache)
+├── nginx.conf           # Configuração principal
+├── nginx.conf.prod      # Modelo para produção
+├── nginx.conf.dev       # Modelo para desenvolvimento
+├── docker/              # Dockerfile e docker-compose.yml
+├── scripts/             # Scripts úteis (test, reload)
+├── README.md            # Este arquivo
+├── LICENSE              # Licença de uso
+└── .gitignore           # Arquivos ignorados pelo Git
 ```
 
 ---
@@ -123,10 +125,10 @@ O repositório inclui suporte a Docker para testes locais ou ambientes container
 
 ## 🛠️ Scripts Úteis
 
-| Script | Função |
-|-------|--------|
-| `scripts/test-config.sh` | Testa a sintaxe do NGINX (`nginx -t`) |
-| `scripts/reload-nginx.sh` | Testa + recarrega o NGINX com segurança |
+| Script                   | Função                                      |
+|--------------------------|---------------------------------------------|
+| `scripts/test-config.sh` | Testa a sintaxe do NGINX (`nginx -t`)       |
+| `scripts/reload-nginx.sh`| Testa e recarrega o NGINX com segurança     |
 
 ### Como usar:
 ```bash
@@ -139,26 +141,28 @@ chmod +x scripts/*.sh
 
 ## 🔄 Boas Práticas Adotadas
 
-- ✅ **Versionamento** com Git
-- ✅ **Ambientes separados** (dev, prod)
-- ✅ **Reutilização com snippets**
-- ✅ **Segurança por padrão**
-- ✅ **Estrutura clara e documentada**
-- ✅ **Compatível com automação**
+- ✅ **Versionamento** com Git  
+- ✅ **Ambientes separados** (dev, staging, prod)  
+- ✅ **Reutilização com snippets**  
+- ✅ **Segurança por padrão**  
+- ✅ **Estrutura clara e documentada**  
+- ✅ **Compatível com automação (CI/CD, Ansible, etc)**
 
-> 📌 Nunca versione certificados ou senhas! Use `.gitignore`.
+> 📌 **Dica**: Nunca versione certificados, chaves ou senhas! Use `.gitignore`.
 
 ---
 
 ## 🤝 Contribuição
 
 Sinta-se à vontade para:
-- Forkar este repositório
-- Abrir issues para melhorias
-- Enviar PRs com novos snippets, sites ou otimizações
+- 🔁 Forkar este repositório
+- 🐛 Abrir issues para bugs ou melhorias
+- 🚀 Enviar Pull Requests com novas funcionalidades
 
 ---
 
 ## 📄 Licença
 
 Este projeto está licenciado sob a **MIT License** – veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
