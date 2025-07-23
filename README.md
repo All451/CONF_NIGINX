@@ -15,26 +15,6 @@ Este repositório contém configurações organizadas, seguras e escaláveis do 
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-nginx-configs/
-├── sites-available/     # Configurações completas dos sites (virtual hosts)
-├── sites-enabled/       # Sites ativos (habilitados no NGINX)
-├── conf.d/              # Configurações extras (gzip, segurança, timeouts)
-├── snippets/            # Blocos reutilizáveis (SSL, proxy, cache)
-├── nginx.conf           # Configuração principal
-├── nginx.conf.prod      # Modelo para produção
-├── nginx.conf.dev       # Modelo para desenvolvimento
-├── docker/              # Dockerfile e docker-compose.yml
-├── scripts/             # Scripts úteis (test, reload)
-├── README.md            # Este arquivo
-├── LICENSE              # Licença de uso
-└── .gitignore           # Arquivos ignorados pelo Git
-```
-
----
-
 ## 🚀 Como Usar
 
 ### 1. Clone o repositório
