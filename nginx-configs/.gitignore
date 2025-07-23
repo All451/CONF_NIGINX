@@ -1,0 +1,19 @@
+# Logs
+logs/
+*.log
+/var/log/nginx/*
+
+# Certificados (não versione!)
+/data/certbot/
+/etc/letsencrypt/
+
+# NGINX PID
+/run/nginx.pid
+
+# Env files
+.env
+*.env
+
+# Sistema
+.DS_Store
+Thumbs.db
